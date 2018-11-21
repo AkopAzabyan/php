@@ -1,17 +1,31 @@
 <?php
+/**
+ *
+ */
 define("str","stroka",true);
 define("number",25,true);
 $bool =true;
 $int=5;
 $double=5.5;
 $string="string";
+
+/**
+ * Class object
+ */
 class object
 {
+    /**
+     *
+     */
     function fun()
     {
         echo "object";
     }
 }
+
+/**
+ *
+ */
 $object=new object;
 
 echo " ------------variables-------------- " . "<br>";
@@ -30,13 +44,21 @@ echo $string . $bool . $double . "<br>";
 echo $bool + $double ."<br>";
 echo str . "<br>";
 echo number . "<br>";
-
+/**
+ * @param $var1
+ * @param $var2
+ * @return mixed
+ */
 function getResultInt($var1,$var2)
 {
   return $var1+$var2;
 }
 echo getResultInt(25,25) . "<br>";
-
+/**
+ * @param $var1
+ * @param $var2
+ * @return string
+ */
 function getResultString($var1,$var2)
 {
     return $var1 ."-". $var2;
