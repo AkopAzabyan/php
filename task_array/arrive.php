@@ -41,7 +41,7 @@ echo "------------------first option-------------------- <br>";
 print_r($name);
 echo "<br>";
 print_r($surname);
-echo "<br>-------------------second option-----------------";
+echo "<br>-----------------second option-----------------";
 echo "<br>-------------------names-----------------<br>";
 
 foreach ($name as $item)
@@ -84,7 +84,7 @@ $dick=array(
     "Davidov"=>16,
     "Romanchik"=>41,
     "Dmitruk"=>42,
-    "Ysckovec"=>23,
+    "Yaskovec"=>23,
 
 );
 $v="v";
