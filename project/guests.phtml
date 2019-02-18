@@ -1,0 +1,43 @@
+<?
+require_once "connectDB.php";
+?>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Стена сообщений</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="margin: 0.5%">
+<form action="" method="post">
+    <p>Ввведите имя пользователя:
+        <label>
+            <input type="text" required name="name"/>
+        </label>
+    </p>
+    <p>Комментарий:<br>
+        <label>
+            <textarea required name="comment"></textarea>
+        </label>
+    </p>
+    <p>
+        <input style="height: 20px;width: 200px;" name="submit" type="submit">
+    </p>
+</form>
+<div>
+</div>
+<div class="container" style="border: #0f0f0f solid">
+
+    <h2> Стена сообщений</h2>
+
+    <?php
+    require_once("DataBase.php");
+    ?>
+
+
+</div>
+
+</body>
+</html>
